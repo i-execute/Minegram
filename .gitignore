@@ -13,3 +13,4 @@ geyser/Geyser-Standalone.jar
 chunker-cli.jar
 mc-*.zip
 backups/
+cpu_watchdog.sh
