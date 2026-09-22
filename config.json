@@ -1,0 +1,19 @@
+{
+  "owner_id": 7610246474,
+  "admins": [],
+  "feedback_group": 0,
+  "banned": [],
+  "topics": {
+    "chat": 44,
+    "backups": 46,
+    "worlds": 48,
+    "logs": 50,
+    "mclogs": 52,
+    "dynmap": 54,
+    "power": 56,
+    "updater": 58
+  },
+  "backup_group": -1004309609277,
+  "langs": {},
+  "backup_topic_id": 46
+}

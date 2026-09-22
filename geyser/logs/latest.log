@@ -1,0 +1,23 @@
+[18:53:04.081 main/INFO] Loading extensions...
+[18:53:04.120 main/INFO] Loaded 0 extension(s)
+[18:53:11.568 main/INFO] ******************************************
+[18:53:11.571 main/INFO] 
+[18:53:11.572 main/INFO] Loading Geyser version 2.11.3-b1245 (git-master-2808f7d)
+[18:53:11.572 main/INFO] 
+[18:53:11.572 main/INFO] ******************************************
+[18:53:17.716 main/INFO] Registered 199 custom block overrides.
+[18:53:17.720 main/INFO] Registered 2 custom block item overrides.
+[18:53:17.728 main/INFO] Registered 7 custom blocks.
+[18:53:26.689 main/INFO] Registered 1 custom items
+[18:53:31.658 GeyserServer-2-1/INFO] Started Geyser on UDP port 19132
+[18:53:31.845 main/INFO] Done (20.276s)! Run /geyser help for help!
+[18:55:13.233 GeyserServerChild-4-1/INFO] Player connected with username Forget 2796 (2193)
+[18:55:13.356 clientNetworkSession-6-1/INFO] Forget 2796 (logged in as: Forget_2796) has connected to remote java server on address 127.0.0.1
+[18:55:14.903 clientNetworkSession-6-1/INFO] Forget 2796 has disconnected from remote Java server on address 127.0.0.1 because of Outdated client! Please use 26.3
+[19:00:33.768 GeyserServerChild-4-2/INFO] Player connected with username Forget 2796 (2193)
+[19:00:33.862 clientNetworkSession-6-2/INFO] Forget 2796 (logged in as: Forget_2796) has connected to remote java server on address 127.0.0.1
+[19:02:50.791 GeyserServerChild-4-2/INFO] Forget 2796 has disconnected from remote Java server on address 127.0.0.1 because of Bedrock client disconnected
+[19:03:40.369 GeyserServerChild-4-1/INFO] Player connected with username Forget 2796 (2193)
+[19:03:40.397 clientNetworkSession-6-1/INFO] Forget 2796 (logged in as: Forget_2796) has connected to remote java server on address 127.0.0.1
+[19:05:11.588 clientNetworkSession-6-1/INFO] Forget 2796 has disconnected from remote Java server on address 127.0.0.1 because of You are sending too many packets!
+[19:05:54.716 GeyserServerChild-4-2/INFO] Bedrock user with ip: /31.77.12.187 has disconnected for reason Bedrock client timed out

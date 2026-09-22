@@ -1,0 +1,15 @@
+.env
+*.session
+__pycache__/
+bot.log*
+*.json
+!config.json
+server/
+.venv/
+photos/
+mt_entities.json
+*.backup
+geyser/Geyser-Standalone.jar
+chunker-cli.jar
+mc-*.zip
+backups/
