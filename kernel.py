@@ -140,6 +140,8 @@ class Kernel:
                 asyncio.create_task(dynmap.on_server_up())  # свежие ссылки в топики при старте бота
                 asyncio.create_task(dynmap.watch_tunnel())  # авто-пост при смене/смерти URL туннеля
                 asyncio.create_task(players.watch_players())  # уведы о входе/выходе игроков
+            import qwerty_chat
+            asyncio.create_task(qwerty_chat.watch_qwerty())
         except Exception as e:
             log(f"[INIT] dynmap post skip: {str(e)[:80]}")
 
