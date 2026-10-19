@@ -3,10 +3,21 @@ import asyncio
 import re
 
 INBOX = "/QwertyWork/Minegram/qwerty_inbox.txt"
+LOG = "/QwertyWork/Minegram/server/logs/latest.log"
 OWNER_NICK = ".Forget_2796"
 PAT_CHAT = re.compile(r"<(\.?[\w\d_]+)>\s+(q[sS]?)[\s:]+(.*)")
 PAT_CMD = re.compile(r"<(\.?[\w\d_]+)>\s*/(q[sS]?)[\s:]+(.*)")
-_seen = 0
+_seen = -1
+
+
+def _init_seen():
+    global _seen
+    if _seen < 0:
+        try:
+            with open(LOG, errors="ignore") as f:
+                _seen = sum(1 for _ in f)
+        except FileNotFoundError:
+            _seen = 0
 
 
 def _tail_new(path, seen):
@@ -30,9 +41,10 @@ async def _reply(text, private):
 
 async def watch_qwerty():
     global _seen
+    _init_seen()
     while True:
         await asyncio.sleep(3)
-        lines = _tail_new("/QwertyWork/Minegram/server/logs/latest.log", _seen)
+        lines = _tail_new(LOG, _seen)
         if not lines:
             continue
         _seen += len(lines)
