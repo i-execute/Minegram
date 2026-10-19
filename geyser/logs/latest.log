@@ -9488,3 +9488,8 @@ tel.schich.libdatachannel.exception.FailureException: sendMessage
   "VB|Protocol26_3To26_2|added_custom_model_data": 1b,
   "VB|Protocol26_3To26_2|added_custom_name": 1b
 }), DataComponentType(id=6 , key=minecraft:custom_name)=DataComponent(type=DataComponentType(id=6 , key=minecraft:custom_name), value=TranslatableComponentImpl[children=[], style=StyleImpl{font=null, color=white, shadowColor=null, decorations=DecorationMap{obfuscated=not_set, bold=not_set, strikethrough=not_set, underlined=not_set, italic=false}, clickEvent=null, hoverEvent=null, insertion=null}, key=vb.item.warm_ocean_ruins_map, fallback=26.3 Warm Ocean Ruins Map, args=[]])}))]]]
+[18:51:10.063 GeyserServerChild-4-1/INFO] Forget 2796 has disconnected from remote Java server on address 127.0.0.1 because of Bedrock client disconnected
+[18:52:10.581 GeyserServerChild-4-2/INFO] vkw8016 has disconnected from remote Java server on address 127.0.0.1 because of Bedrock client disconnected
+[18:52:17.639 GeyserServerChild-4-3/INFO] Player connected with username Forget 2796 (2193)
+[18:52:17.642 clientNetworkSession-8-3/INFO] Forget 2796 (logged in as: Forget_2796) has connected to remote java server on address 127.0.0.1
+[18:53:27.688 GeyserServerChild-4-3/INFO] Forget 2796 has disconnected from remote Java server on address 127.0.0.1 because of Bedrock client disconnected

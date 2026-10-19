@@ -30,7 +30,7 @@ def _tail_new(path, seen):
 
 async def _reply(text, private):
     import mc
-    msg = f'{{"text":"{text}","color":"aqua"}}' if not private else (
+    msg = f'{{"text":"{text}","color":"gold"}}' if not private else (
         f'{{"text":"{text}","color":"dark_gray","italic":true}}')
     try:
         await mc.cmd(f"say {text}")

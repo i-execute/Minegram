@@ -78,7 +78,7 @@ def main():
                 res = asyncio.run(handle(req["params"]["name"], req["params"].get("arguments", {})))
                 send({"jsonrpc": "2.0", "id": rid, "result": res})
             except Exception as e:
-                send({"jsonrpc": "2.0", "id": rid, "result": {"content": [{"type": "text", "text": f"error: {e}"}], "isError": True}})
+                send({"jsonrpc": "2.0", "id": rid, "result": {"content": [{"type": "text", "text": f"error: {e}"}]}})
         elif method == "ping":
             send({"jsonrpc": "2.0", "id": rid, "result": {}})
         elif rid is not None:
