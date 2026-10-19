@@ -33,10 +33,12 @@ async def _reply(text, private):
     msg = f'{{"text":"{text}","color":"aqua"}}' if not private else (
         f'{{"text":"{text}","color":"dark_gray","italic":true}}')
     try:
-        await mc.cmd(f"tellraw @a {msg}")
+        await mc.cmd(f"say {text}")
     except Exception as e:
         with open("/QwertyWork/Minegram/bot.log", "a") as f:
             f.write(f"reply fail: {type(e).__name__} {e}\n")
+    with open("/QwertyWork/Minegram/bot.log", "a") as f:
+        f.write(f"replied: {text[:80]}\n")
 
 
 async def watch_qwerty():
