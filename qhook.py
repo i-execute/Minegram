@@ -44,7 +44,7 @@ def _reset(n):
 
 
 def _push(nick, msg):
-    body = json.dumps({"event": "mc.chat", "nick": nick, "msg": msg}).encode()
+    body = json.dumps({"event_type": "mc.chat", "nick": nick, "msg": msg}).encode()
     sig = hmac.new(SECRET, body, hashlib.sha256).hexdigest()
     req = urllib.request.Request(HOOK_URL, data=body, headers={
         "Content-Type": "application/json",
